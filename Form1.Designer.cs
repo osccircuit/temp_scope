@@ -35,7 +35,8 @@ partial class Form1
 
         Button button1 = new Button();
         button1.Text = "Нажми меня"; // Установите текст кнопки
-        button1.Location = new System.Drawing.Point(50, 50); // Установите положение кнопки на форме (координаты X и Y)
+        button1.Location = new Point((this.ClientSize.Width - button1.Width) / 2, (this.ClientSize.Height - button1.Height) / 2); // Разместите кнопку в середине экрана
+        //button1.Location = new System.Drawing.Point(0, 0); // Установите положение кнопки на форме (координаты X и Y)
         button1.Click += new EventHandler(button1_Click); // Добавьте обработчик события нажатия на кнопку
         this.Controls.Add(button1); // Добавьте кнопку на форму
     }
